@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the container fills the full screen height */
+}
+
+body {
+    /* Changed background-attachment to 'fixed' */
+    background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+    background-attachment: fixed; 
+    
+    /* Ensures the background covers the whole area even if content is short */
+    background-size: cover; 
+    
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    min-height: 100vh; /* Minimum height is the full viewport */
+}
+
+/* Heading */
+h1{
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:60px;
+    text-shadow:0 0 20px #38bdf8;
+}
+
+/* Choices layout */
+.choices{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+}
+
+/* Choice box */
+.choice{
+    background: rgba(255,255,255,0.08);
+    height:130px;
+    width:130px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:70px;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+/* Hover effect */
+.choice:hover{
+    transform:scale(1.1);
+    background: rgba(255,255,255,0.15);
+    box-shadow:0 0 25px #38bdf8;
+}
+
+/* Scoreboard */
+.score_board{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    font-size:24px;
+    margin-top:50px;
+}
+
+.score p:first-child{
+    font-size:60px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+/* Message */
+#message{
+    margin-top:30px;
+    display:inline-block;
+    font-size:24px;
+    padding:12px 30px;
+    background:#020617;
+    border-radius:30px;
+    box-shadow:0 0 15px #38bdf8;
+}
+
+/* Restart Button */
+#restart{
+    display:inline-block;
+    margin-top:40px;
+    font-size:18px;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:#020617;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#restart:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #38bdf8;
+}
+
